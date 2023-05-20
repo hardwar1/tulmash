@@ -1,0 +1,37 @@
+.suppliers {
+  padding-bottom: 45px;
+  &__container {
+  }
+
+  &__h2 {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    max-width: 480px;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  &__slider-wrap {
+    position: relative;
+    padding-right: 88px;
+    @include max-w($desktops-lg) {
+      padding: 0 50px;
+    }
+  }
+
+  &__slider {
+  }
+
+  &__list {
+    align-items: center;
+  }
+
+  &__item {
+    width: fit-content;
+  }
+
+  &__img {
+  }
+}

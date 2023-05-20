@@ -1,0 +1,152 @@
+.form {
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 45px;
+  max-width: 832px;
+  color: #212529;
+
+  @include max-w($tablets) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    color: #212529;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  &__title > * {
+    color: #212529;
+  }
+
+  &__text {
+    margin: 0 auto 55px;
+    max-width: 440px;
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    gap: 25px;
+
+    &--mb25 {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__input {
+  }
+
+  &__textarea {
+    margin-bottom: 60px;
+  }
+
+  &__form-footer {
+  }
+
+  &__attach-file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include max-w($tablets) {
+      align-items: flex-start;
+    }
+  }
+
+  &__form-file {
+    margin-bottom: 10px;
+  }
+
+  &__file {
+  }
+
+  &__file-btn {
+    display: inline-block;
+    padding: 6px 11px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__file-text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+
+    @include max-w($tablets) {
+      display: inline;
+    }
+  }
+
+  &__file-desc {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #797979;
+    max-width: 168px;
+    margin: 0 auto;
+    display: block;
+
+    @include max-w($tablets) {
+      text-align: left;
+      margin: 0;
+      max-width: unset;
+    }
+  }
+
+  &__policy {
+    max-width: 450px;
+  }
+
+  &__policy a {
+    color: #53c2bb;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 67px;
+
+    @include max-w($tablets) {
+      gap: 35px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__btn {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 32px;
+    color: #212529;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    border-width: 4px;
+
+    @include max-w($tablets) {
+      margin-right: auto;
+    }
+  }
+
+  &__captha-wrapper {
+    min-width: 290px;
+    min-height: 50px;
+    background-color: #ccc;
+    order: 2;
+
+    @include max-w($tablets) {
+      order: unset;
+    }
+  }
+}

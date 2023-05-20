@@ -1,0 +1,24 @@
+<div class="gives {{gives-parent-mod}} {{gives-mod}}">
+  <div class="gives__container container">
+    <div class="gives__h2">
+      <h2>
+        Что ДАЕТ комплексное <br> снабжение?
+      </h2>
+    </div>
+
+    <div class="gives__list-wrapper">
+      <ul class="gives__list">
+        {{#each gives}}
+        <li class="gives__item gives__item--icon-{{icon}}">
+          <span class="gives__num">
+            {{num}}
+          </span>
+          <span class="gives__text">
+            {{text}}
+          </span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<form class="{{form-parent-mod}} form {{form-mod}}" name="feedback-form" method="post">
+  <div class="form__title h2">
+    Заявка на поставку
+  </div>
+
+  <p class="form__text">
+    Работаем с Заявками, Строительными сметами, Проектными спецификациями.
+  </p>
+
+  <div class="form__row">
+    <input class="form__input input" name="name" type="text" id="form_name" placeholder="Контактное лицо (ФИО) *"
+      aria-label="Контактное лицо (ФИО)">
+    <input class="form__input input" type="tel" name="tel" id="form_tel" placeholder="Телефон*" aria-label="Телефон">
+  </div>
+
+  <textarea class="form__textarea input input--textarea" placeholder="Подробнее о проекте" name="textarea"
+    id="form_comm"></textarea>
+
+  <div class="relative">
+    <div class="form__row form__row--mb25">
+      <div class="form__attach-file">
+        <label class="form__form-file">
+          <input type="file" class="visually-hidden" multiple name="files[]">
+          <span class="form__file-btn">Приложить файлы </span>
+          <span class="form__file-text file-text">Файл не выбран </span>
+        </label>
+        <span class="form__file-desc">Максимально 10 файлов, до 25Мб суммарно</span>
+      </div>
+
+      <div class="form__policy">
+        <label class="form__check checkbox">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="check" checked>
+
+          <div class="checkbox__text">
+            <span class="checkbox__text-in">
+              Я соглашаюсь на обработку персональных данных в
+              соответствии с <a href="">политикой конфиденциальности</a>.
+            </span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="form__bottom">
+      <div class="form__captha-wrapper">
+        <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+      </div>
+
+      <button class="form__btn btn">отправить</button>
+    </div>
+  </div>
+</form>

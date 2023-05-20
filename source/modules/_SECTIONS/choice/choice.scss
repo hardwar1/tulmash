@@ -1,0 +1,82 @@
+.choice {
+  color: #fff;
+
+  &__container {
+  }
+
+  &__inner {
+    padding: 35px 0 15px 30px;
+    position: relative;
+
+    @include max-w($tablets) {
+      padding-left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 173px;
+      z-index: -1;
+      width: 100vw;
+      height: 100%;
+      background-image: linear-gradient(93.35deg, #00c0c0 6.42%, #2f83c5 95%);
+      mix-blend-mode: normal;
+
+      @include max-w($desktops-md) {
+        right: -15px;
+      }
+    }
+  }
+
+  &__title,
+  &__title > * {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+
+    @include max-w($desktops-sm) {
+      font-size: 30px;
+    }
+
+    @include max-w($tablets) {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 798px;
+    padding-left: 10px;
+
+    @include max-w($tablets) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__word {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    max-width: 160px;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="article-cards {{article-cards-parent-mod}} {{article-cards-mod}}">
+  <div class="article-cards__container container">
+    <ul class="article-cards__list">
+      {{#each article-card}}
+      <li class="article-cards__item">
+        {{> article-card article-card-parent-mod="" article-card-mod=""}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

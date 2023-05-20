@@ -1,0 +1,41 @@
+<div class="suppliers">
+  <div class="suppliers__container container">
+    <div class="suppliers__h2 padding-l">
+      <h2>
+        НАШИ ПОСТАВЩИКИ
+      </h2>
+    </div>
+
+    <div class="suppliers__text padding-l">
+      <p>
+        При выборе поставщиков мы руководствуемся внутренними стандартами закупок, обязательными для наших Клиентов. Мы
+        дорожим своей репутацией и репутацией наших Клиентов, поэтому нам важно, чтобы у наших поставщиков она была
+        безупречной
+      </p>
+    </div>
+
+    <div class="suppliers__slider-wrap ">
+      <div class="suppliers__slider swiper">
+        <ul class="suppliers__list swiper-wrapper">
+          {{#each suppliers}}
+          <li class="suppliers__item swiper-slide">
+            <img class="suppliers__img" src="img/suppliers/{{img}}.png" alt="{{alt}}">
+          </li>
+          {{/each}}
+        </ul>
+
+      </div>
+
+      <button class="suppliers__slider-button slider-button slider-button--prev">
+        <svg width="28" height="20">
+          <use xlink:href="img/sprite.svg#arrow-l"></use>
+        </svg>
+      </button>
+      <button class="slider-button slider-button--next">
+        <svg width="28" height="20">
+          <use xlink:href="img/sprite.svg#arrow-l"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>

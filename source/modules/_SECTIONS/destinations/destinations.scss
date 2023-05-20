@@ -1,0 +1,98 @@
+.destinations {
+  &__container {
+  }
+
+  &__inner {
+    max-width: 870px;
+  }
+
+  &__h2 {
+    margin-bottom: 50px;
+
+    @include max-w($tablets) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+
+    @include max-w($tablets) {
+      flex-direction: column;
+      gap: 35px;
+      padding-left: 0;
+    }
+  }
+
+  &__item {
+    max-width: 230px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    position: relative;
+
+    @include max-w($tablets) {
+      padding-top: 100px;
+      max-width: 450px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 181px;
+      width: 161px;
+      background-image: url(../img/sprite.svg#dest-1);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include max-w($tablets) {
+        height: 80px;
+      }
+    }
+
+    &--icon-dest-2::after {
+      background-image: url(../img/sprite.svg#dest-2);
+    }
+
+    &--icon-dest-3::after {
+      background-image: url(../img/sprite.svg#dest-3);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+  }
+
+  &__item--icon-dest-1 {
+  }
+
+  &__item--icon-dest-2 {
+  }
+
+  &__item--icon-dest-3 {
+  }
+
+  &__h3 {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 42px;
+
+    @include max-w($tablets) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}

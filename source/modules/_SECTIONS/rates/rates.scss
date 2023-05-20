@@ -1,0 +1,59 @@
+.rates {
+  padding: 45px 0 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  &__container {
+  }
+
+  &__inner {
+    padding-left: 30px;
+  }
+
+  &__h2 {
+    color: #343434;
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 35px;
+  }
+
+  &__item {
+  }
+
+  &__card {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 483px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.container {
+}
+
+.button {
+  padding: 11px 30px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #00b7b7;
+}

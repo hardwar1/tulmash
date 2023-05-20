@@ -1,0 +1,51 @@
+<div class="hero">
+  <h2 class="visually-hidden">
+
+  </h2>
+  <div class="hero__wrapper swiper">
+    <ul class="hero__list swiper-wrapper">
+
+      {{#each hero}}
+      <li class="hero__item swiper-slide">
+        <div class="hero__bg">
+          <img class="hero__img" src="img/hero/{{img}}.jpg" alt="{{alt}}">
+        </div>
+        <div class="hero__container container">
+          <div class="hero__item-inner">
+            <div class="hero__info">
+              <p class="hero__title">
+                {{title}}
+              </p>
+              <p class="hero__item-text">
+                Точно в срок!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <span class="right-color" style="background-color: #{{color}}"></span>
+      </li>
+      {{/each}}
+
+    </ul>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="img-right">
+      <img class="img-right__img" src="img/img-right/1.jpg" alt="-">
+  </div>
+
+  <div class="hero__container container">
+    <div class="hero__box-wrapper">
+      <div class="hero__text-box">
+        <p class="hero__text">
+          Серьёзный опыт продаж стройматериалов. Снабжение строительных объектов с доставкой в день заказа. Сборка сотен
+          позиций в одну поставку. Комплектация площадок строительства расходниками, малоценкой и отделочными
+          материалами.
+          Разбираемся в том, что продаём.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

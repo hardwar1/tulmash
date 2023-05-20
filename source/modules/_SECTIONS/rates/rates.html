@@ -1,0 +1,27 @@
+<div class="rates {{rates-parent-mod}} {{rates-mod}}" style="background-image: url(img/rates-bg.jpg);">
+  <div class="rates__container container">
+    <div class="rates__inner">
+    <div class="rates__h2">
+      <h2>
+        Наши тарифы
+      </h2>
+    </div>
+
+    <ul class="rates__list">
+      {{#each rate-card}}
+      <li class="rates__item">
+        {{> rate-card rate-card-parent-mod="rates__card" rate-card-mod=""}}
+
+        <a class="rates__button button" href="">
+          ЗАКАЗАТЬ
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+
+    <p class="rates__text">
+      * Стоимость рассчитывается для каждого заказчика отдельно, с учетом индивидуальных потребностей.
+    </p>
+  </div>
+  </div>
+</div>

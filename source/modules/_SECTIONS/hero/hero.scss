@@ -1,0 +1,153 @@
+.hero {
+  color: #fff;
+  &__wrapper {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    box-sizing: border-box;
+    height: unset;
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+  }
+
+  &__item-inner {
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+
+    &--pb {
+      padding-bottom: 195px;
+      @include max-w($desktops-sm) {
+        padding-bottom: 120px;
+      }
+    }
+
+  }
+
+  &__info {
+    position: relative;
+    z-index: 3;
+    padding-left: 40px;
+    border-left: 5px solid #ffffff;
+    height: 100%;
+
+    @include max-w($tablets) {
+      padding-left: 0;
+      border: 0;
+    }
+
+
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    color: #fff;
+
+    @include max-w($desktops-sm) {
+      font-size: 35px;
+    }
+
+    @include max-w($tablets) {
+      font-size: 26px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    @include max-w($tablets) {
+      font-size: 16px;
+    }
+  }
+
+  &__box-wrapper {
+    position: relative;
+    min-height: 80px;
+  }
+
+  &__text-box {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    padding: 25px 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 550px;
+    background-color: rgba(15, 159, 178, 0.74);
+    backdrop-filter: blur(5px);
+
+    @include max-w($desktops-sm) {
+      position: static;
+      max-width: 100vw;
+      width: 100vw;
+      margin: 0 -15px;
+    }
+
+    @include max-w($tablets) {
+      padding: 25px;
+    }
+  }
+
+  &__text {
+    @include max-w($desktops-sm) {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 14px;
+    left: 50%;
+    display: flex;
+    width: 100%;
+    transform: translateX(90px);
+    gap: 15px;
+    width: fit-content;
+
+    @include max-w($desktops-sm) {
+      transform: translateX(-50%);
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #ffffff;
+    opacity: 1;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    margin: 0 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,13 @@
+- text: Главная страница
+- text: Комплексное снабжение
+- text: Аутсорсинг снабжения
+- text: Комплектация малоценкой
+- text: О компании
+- text: Контакты
+  mod: mb30
+- text: Вход для клиентов
+  mod: footer__menu-item--ff-com
+- text: Вакансии
+  mod: footer__menu-item--ff-com
+- text: Политика конфиденциальности
+  mod: footer__menu-item--ff-com

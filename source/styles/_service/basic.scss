@@ -1,0 +1,403 @@
+.container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1182px;
+  @include container-paddings();
+}
+
+.container .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  word-break: unset;
+  word-wrap: break-word;
+
+  @media (min-width: $tablets) {
+    font-size: 40px;
+    word-break: unset;
+  }
+
+  @media (min-width: $desktops-md) {
+    font-size: 52px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #343434;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  @include max-w($tablets) {
+    font-size: 24px;
+  }
+}
+
+.h2 {
+  padding-left: 30px;
+
+  @include max-w($tablets) {
+    padding-left: 0;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #343434;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  @include max-w($tablets) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.logo {
+  display: block;
+  width: fit-content;
+
+  &__img {
+  }
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.burger-btn {
+  @include no-btn;
+  position: relative;
+  z-index: 99;
+  border-width: 0;
+  width: 47px;
+  height: 50px;
+  display: none;
+
+  @include max-w($desktops-sm) {
+    display: block;
+  }
+
+  &__line {
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #00b7b7;
+    transition: top 0.3s, left 0.3s, width 0.3s, opacity 0.3s, transform 0.3s;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  &__line:nth-child(even) {
+    left: 25px;
+    border-radius: 0 9px 9px 0;
+  }
+
+  &__line:nth-child(odd) {
+    left: 13px;
+    border-radius: 9px 0 0 9px;
+  }
+
+  &__line:nth-child(1),
+  &__line:nth-child(2) {
+    top: 17px;
+  }
+
+  &__line:nth-child(4),
+  &__line:nth-child(3) {
+    top: 24px;
+  }
+
+  &__line:nth-child(5),
+  &__line:nth-child(6) {
+    top: 31px;
+  }
+
+  &__line:nth-child(6) {
+    width: 6px;
+  }
+
+  &.active &__line:nth-child(1),
+  &.active &__line:nth-child(6) {
+    transform: rotate(45deg);
+  }
+
+  &.active &__line:nth-child(2),
+  &.active &__line:nth-child(5) {
+    transform: rotate(-45deg);
+  }
+
+  &.active &__line:nth-child(1) {
+    top: 19px;
+    left: 13px;
+    width: 13px;
+  }
+
+  &.active &__line:nth-child(2) {
+    top: 19px;
+    left: 22px;
+  }
+  &.active &__line:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+  &.active &__line:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+  &.active &__line:nth-child(5) {
+    top: 28px;
+    left: 13px;
+  }
+  &.active &__line:nth-child(6) {
+    top: 28px;
+    left: 22px;
+    width: 12px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 10px 8px;
+  border: 2px solid #00b7b7;
+  border-radius: 65px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  background-color: transparent;
+
+  &--white {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+.right-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 58px;
+
+  @include max-w($desktops-lg) {
+    display: none;
+  }
+}
+
+.slider-button {
+  @include no-btn;
+  position: absolute;
+  top: 30px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+
+  &--prev {
+    left: -51px;
+    @include max-w($desktops-lg) {
+      left: 0;
+    }
+  }
+
+  &--next {
+    right: 50px;
+    justify-content: flex-end;
+
+    @include max-w($desktops-lg) {
+      right: 0;
+    }
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @include max-w($tablets) {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 24px;
+    color: #000;
+    gap: 8px;
+  }
+}
+
+.input {
+  padding: 0 0 5px;
+  background-color: transparent;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  border: 0;
+  width: 400px;
+  color: #000;
+  border-bottom: 1px solid #000;
+
+  &::placeholder {
+    color: #212529;
+  }
+
+  &--textarea {
+    padding: 13px 18px;
+    border: 1px solid #000;
+    resize: none;
+    height: 118px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.checkbox {
+  display: block;
+
+  &__text {
+    position: relative;
+    padding-left: 67px;
+    font-size: 14px;
+    line-height: 17px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url(../img/check.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 45px;
+      height: 45px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 24px;
+      height: 25px;
+      background-image: url(../img/sprite.svg#check);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  }
+
+  &__input:checked + &__text::before {
+    opacity: 1;
+  }
+
+  &__text-in {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.social {
+  display: flex;
+  gap: 40px;
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+.padding-l {
+  padding-left: 30px;
+  margin-right: 49px;
+
+  @include max-w($tablets) {
+    padding-left: 0;
+    margin-right: 0;
+  }
+}
+
+.img-right {
+  position: relative;
+
+  @include max-w($desktops-md) {
+    display: none;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    // right: 58px;
+    left: 50%;
+    transform: translateX(340px);
+    width: 553px;
+    object-fit: contain;
+    z-index: -1;
+  }
+}
+
+main {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.blockquote {
+  background-image: url(../img/blockquote.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 112px 45px 249px;
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #ffffff;
+}

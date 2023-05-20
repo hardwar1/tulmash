@@ -1,0 +1,29 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 20px;
+
+  &__top-text {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 25px;
+    color: #212529;
+    text-align: center;
+  }
+
+  &__contacts {
+    margin-bottom: 20px;
+  }
+
+  &__light-text {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    color: #121212;
+    text-align: center;
+  }
+}

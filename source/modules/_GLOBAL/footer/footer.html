@@ -1,0 +1,79 @@
+<footer class="footer">
+  <div class="footer__container container">
+    {{> address address-parent-mod="footer__address" address-mod=""}}
+  </div>
+
+  <div class="footer__middle">
+    <div class="footer__container container">
+      {{> form form-parent-mod="footer__form" form-mod=""}}
+    </div>
+  </div>
+
+  <div class="footer__bottom-container container">
+    <div class="footer__bottom">
+      <div class="footer__item">
+        <a class="footer__logo logo" href="">
+          <img class="logo__img" src="./img/logo-footer.svg" height="42" width="476" alt="логотип тулмашсервис">
+        </a>
+
+        <span class="footer__copy">
+          © 2000-2023, ООО "ТМС"
+        </span>
+      </div>
+      <address class="footer__bottom-address">
+        <ul class="footer__bottom-list">
+          <li class="footer__list-item">
+            Адрес: 300002, г. Тула, ул. Литейная, д. 22а
+            <br>
+            ООО "ТУЛМАШСЕРВИС" (ООО "ТМС")
+          </li>
+          <li class="footer__list-item">
+            ИНН 7107070814
+          </li>
+          <li class="footer__list-item">
+            ОГРН 1037101125434
+          </li>
+        </ul>
+
+        <a href="" class="footer__bottom-link">
+          E-mail: zakaz@TMC.ooo (Приём заявок и консультации)
+          info@TMC.ooo (Общие вопросы)
+        </a>
+
+        <a href="tel:+79202761182" class="footer__bottom-tel">
+          +7 (920) 276-11-82
+        </a>
+
+        <ul class="footer__bottom-social social">
+          <li class="social__item">
+            <a class="social__link" href="" target="_blank">
+              <svg width="44" height="44">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="" target="_blank">
+              <svg width="44" height="44">
+                <use xlink:href="img/sprite.svg#yt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          {{#each footer-menu}}
+          <li class="footer__menu-item {{mod}}">
+            <a class="footer__menu-link" href="">
+              {{text}}
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+</footer>

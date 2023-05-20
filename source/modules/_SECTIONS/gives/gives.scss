@@ -1,0 +1,93 @@
+.gives {
+  &__container {
+  }
+
+  &__h2 {
+    margin-bottom: 35px;
+  }
+
+  &__list-wrapper {
+    @include max-w($desktops-sm) {
+      overflow-x: auto;
+    }
+  }
+
+  &__list {
+    display: flex;
+    width: fit-content;
+    gap: 44px;
+    max-width: 909px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #000000;
+    padding-right: 49px;
+
+    @include max-w($tablets) {
+      gap: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__item {
+    width: 247px;
+    height: 278px;
+    padding: 92px 22px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    background-image: url(../img/poligon/blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include max-w($desktops-sm) {
+      width: 224px;
+      height: 262px;
+      padding: 81px 22px 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 90px;
+      width: 143px;
+      max-width: 94px;
+      background-image: url(../img/sprite.svg#gives1);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: 2;
+
+      @include max-w($desktops-sm) {
+        height: 76px;
+      }
+    }
+
+    &--icon-2::after {
+      background-image: url(../img/sprite.svg#gives2);
+    }
+
+    &--icon-3::after {
+      background-image: url(../img/sprite.svg#gives3);
+    }
+  }
+
+  &__num {
+    display: block;
+    font-size: 71px;
+    line-height: 87px;
+
+    @include max-w($desktops-sm) {
+      font-size: 40px;
+      line-height: 62px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

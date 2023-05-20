@@ -1,0 +1,18 @@
+<div class="{{how-works-parent-mod}} how-works {{how-works-mod}}">
+  <div class="how-works__container container">
+    <div class="how-works__inner">
+      <ul class="how-works__list">
+        {{#each how-works}}
+        <li class="how-works__item how-works__item--icon-{{icon}}">
+          <div class="how-works__title">
+            {{title}}
+          </div>
+          <p class="how-works__text">
+            {{text}}
+          </p>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

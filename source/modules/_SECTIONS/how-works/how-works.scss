@@ -1,0 +1,73 @@
+.how-works {
+  position: relative;
+  padding: 55px 0 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1516px;
+    max-width: 100%;
+    background-image: url(../img/how-works-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1516px 100%;
+    z-index: -1;
+  }
+
+  &__container {
+    max-width: 1246px;
+  }
+
+  &__inner {
+    overflow-x: auto;
+  }
+
+  &__list {
+    width: fit-content;
+    display: flex;
+    gap: 28px;
+  }
+
+  &__item {
+    max-width: 315px;
+    width: 100%;
+    padding-left: 83px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 63px;
+      height: 71px;
+      background-image: url(../img/sprite.svg#how-works1);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--icon-2::after {
+      background-image: url(../img/sprite.svg#how-works2);
+    }
+
+    &--icon-3::after {
+      background-image: url(../img/sprite.svg#how-works3);
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #343434;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+  }
+}

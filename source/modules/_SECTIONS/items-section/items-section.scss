@@ -1,0 +1,115 @@
+.items-section {
+  &__container {
+  }
+
+  &__h2 {
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    @include max-w($desktops-lg) {
+      padding-left: 60px;
+    }
+
+    @include max-w($tablets) {
+      padding-left: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #000;
+    position: relative;
+
+    @include max-w($tablets) {
+      flex-direction: column;
+    }
+  }
+
+  ol {
+    counter-reset: num;
+  }
+
+  &__word,
+  ol li::before {
+    content: counter(num);
+    counter-increment: num;
+    position: absolute;
+    top: -12px;
+    left: -47px;
+    font-weight: 900;
+    font-size: 256px;
+    text-transform: uppercase;
+    color: #e1f5f5;
+    line-height: 0.7;
+    z-index: -1;
+
+    @include max-w($tablets) {
+      font-size: 156px;
+      left: -32px;
+    }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__word {
+    left: -87px;
+
+    @include max-w($desktops-md) {
+      left: -57px;
+    }
+    @include max-w($tablets) {
+      font-size: 156px;
+      left: -32px;
+    }
+  }
+
+  &__info {
+    margin-right: 45px;
+    width: 100%;
+    max-width: 551px;
+    padding-bottom: 30px;
+    min-height: 240px;
+
+    @include max-w($tablets) {
+      min-height: unset;
+    }
+  }
+
+  &__h3 {
+    margin-bottom: 15px;
+  }
+
+  &__h3 > * {
+    font-size: 24px;
+    font-weight: 400;
+
+    @include max-w($tablets) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 477px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include max-w($tablets) {
+      height: 250px;
+    }
+  }
+
+  &--bold &__h3 > * {
+    font-weight: 700;
+  }
+}

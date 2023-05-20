@@ -1,0 +1,35 @@
+<div class="destinations">
+  <div class="destinations__container container">
+    <div class="destinations__inner">
+
+    <div class="destinations__h2 h2">
+      <h2>
+        наши направления <br> деятельности
+      </h2>
+    </div>
+
+    <ul class="destinations__list">
+      {{#each destinations}}
+      <li class="destinations__item destinations__item--icon-{{icon}}">
+        <div class="destinations__h3 h3 ">
+          <h3>
+            {{title}}
+          </h3>
+        </div>
+
+        <div class="destinations__info">
+          <div class="destinations__text">
+            <p>
+              {{text}}
+            </p>
+          </div>
+          <a class="destinations__btn btn" href="">
+            узнать подробнее
+          </a>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+
+
+.article-card {
+  max-width: 335px;
+  width: 100%;
+  padding: 50px 35px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1116px;
+    background-image: url(../img/article-cards-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  &--bg2::after {
+    left: -395px;
+  }
+
+  &--bg3::after {
+    left: -790px;
+  }
+
+  &__h2 {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  &__btn {
+    margin-top: auto;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,20 @@
+---
+layout: 1
+title: Список страниц
+list-1:
+    -   href: index
+        text: Главная
+    -   href: supply
+        text: Комплексное снабжение
+    -   href: outsourcing
+        text: Ваш аутсорсингснабжения
+    -   href: equipment
+        text: Комплектация  малоценкой
+---
+<ol>
+    {{#each list-1}}
+    <li>
+        <a href="{{href}}.html">{{text}}</a>
+    </li>
+    {{/each}}
+</ol>
