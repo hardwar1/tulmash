@@ -1,23 +1,26 @@
 .estimate {
-
   &__container {
   }
 
   &__inner {
     max-width: 875px;
     padding-bottom: 65px;
-    border-bottom: 1px solid #ADADAD;
+    border-bottom: 1px solid #adadad;
   }
 
   &__h2 {
     margin-bottom: 39px;
   }
 
-
-
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
+
+    @include max-w($tablets) {
+      gap: 25px 5px;
+      margin: 0 -5px;
+    }
   }
 
   &__item {

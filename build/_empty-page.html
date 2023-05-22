@@ -59,7 +59,7 @@
 
                         <ul class="header__list">
                             <li class="header__list-item">
-                                <a class="header__link" href="">услуги...</a>
+                                <a class="header__link hover-menu" href="">услуги...</a>
 
                                 <ul class="header__submenu">
                                     <li class="header__submenu-item">
@@ -81,7 +81,7 @@
                             </li>
 
                             <li class="header__list-item">
-                                <a class="header__link" href="">отправить заявку</a>
+                                <a class="header__link delivery-btn" href="">отправить заявку</a>
                             </li>
 
                             <li class="header__list-item">
@@ -263,14 +263,14 @@
 
                         <ul class="footer__bottom-social social">
                             <li class="social__item">
-                                <a class="social__link" href="" target="_blank">
+                                <a class="social__link" href="" target="_blank" aria-label="в контакте">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#vk"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="" target="_blank">
+                                <a class="social__link" href="" target="_blank" aria-label="ютуб">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#yt"></use>
                                     </svg>
@@ -332,6 +332,289 @@
                 </div>
             </div>
         </footer>
+
+        <div class="overlay js-active active"></div>
+
+        <div class="recommend popap js-active">
+            <div class="recommend__inner popap__inner">
+                <div class="recommend__container container">
+                    <button class="popap__close burger-btn active" type="button" aria-label="закрыть всплывающее окно">
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                    </button>
+
+
+                    <address class="recommend__address address ">
+                        <p class="address__top-text">
+                            Заполните форму или выберите удобный способ связи:
+                        </p>
+
+                        <ul class="address__contacts contacts">
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                    <svg width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#contacts-tel"></use>
+                                    </svg>
+                                    +7 (920) 276-11-82
+                                </a>
+                            </li>
+
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="" target="_blank">
+                                    <svg width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#contacts-wa"></use>
+                                    </svg>
+                                    WhatsApp
+                                </a>
+                            </li>
+
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                    <svg width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#contacts-tg"></use>
+                                    </svg>
+                                    Telegram
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="address__light-text">
+                            Оперативно отвечаем в рабочее время: с 9:00 до 18:00.
+                        </div>
+                    </address>
+
+                    <form class="recommend__form form " name="feedback-form" method="post">
+                        <div class="form__title h2">
+                            Запрос на рекомендации
+                        </div>
+
+                        <p class="form__text">
+                            Работаем с Заявками, Строительными сметами, Проектными спецификациями.
+                        </p>
+
+                        <div class="form__row">
+                            <input class="form__input input" name="name" type="text" id="form_name" placeholder="Контактное лицо (ФИО) *"
+                                aria-label="Контактное лицо (ФИО)">
+                            <input class="form__input input" type="tel" name="tel" id="form_tel" placeholder="Телефон*" aria-label="Телефон">
+                        </div>
+
+                        <textarea class="form__textarea input input--textarea" placeholder="Подробнее о проекте" name="textarea"
+                            id="form_comm"></textarea>
+
+                        <div class="relative">
+                            <div class="form__row form__row--mb25">
+
+                                <div class="form__policy">
+                                    <label class="form__check checkbox">
+                                        <input class="checkbox__input visually-hidden" type="checkbox" name="check" checked>
+
+                                        <div class="checkbox__text">
+                                            <span class="checkbox__text-in">
+                                                Я соглашаюсь на обработку персональных данных в
+                                                соответствии с <a href="">политикой конфиденциальности</a>.
+                                            </span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form__captha-wrapper">
+                                    <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+                                </div>
+                            </div>
+
+                            <div class="form__bottom">
+
+
+                                <button class="form__btn btn">отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery popap js-active">
+            <div class="delivery__inner popap__inner">
+                <div class="delivery__container container">
+                    <button class="popap__close burger-btn active" type="button" aria-label="закрыть всплывающее окно">
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                    </button>
+
+                    <address class="delivery__address address ">
+                        <p class="address__top-text">
+                            Заполните форму или выберите удобный способ связи:
+                        </p>
+
+                        <ul class="address__contacts contacts">
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                    <svg width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#contacts-tel"></use>
+                                    </svg>
+                                    +7 (920) 276-11-82
+                                </a>
+                            </li>
+
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="" target="_blank">
+                                    <svg width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#contacts-wa"></use>
+                                    </svg>
+                                    WhatsApp
+                                </a>
+                            </li>
+
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                    <svg width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#contacts-tg"></use>
+                                    </svg>
+                                    Telegram
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="address__light-text">
+                            Оперативно отвечаем в рабочее время: с 9:00 до 18:00.
+                        </div>
+                    </address>
+
+                    <form class="delivery__form form " name="feedback-form" method="post">
+                        <div class="form__title h2">
+                            Заявка на поставку
+                        </div>
+
+                        <p class="form__text">
+                            Работаем с Заявками, Строительными сметами, Проектными спецификациями.
+                        </p>
+
+                        <div class="form__row">
+                            <input class="form__input input" name="name" type="text" id="form_name" placeholder="Контактное лицо (ФИО) *"
+                                aria-label="Контактное лицо (ФИО)">
+                            <input class="form__input input" type="tel" name="tel" id="form_tel" placeholder="Телефон*" aria-label="Телефон">
+                        </div>
+
+                        <textarea class="form__textarea input input--textarea" placeholder="Подробнее о проекте" name="textarea"
+                            id="form_comm"></textarea>
+
+                        <div class="relative">
+                            <div class="form__row form__row--mb25">
+                                <div class="form__attach-file">
+                                    <label class="form__form-file">
+                                        <input type="file" class="visually-hidden" multiple name="files[]">
+                                        <span class="form__file-btn">Приложить файлы </span>
+                                        <span class="form__file-text file-text">Файл не выбран </span>
+                                    </label>
+                                    <span class="form__file-desc">Максимально 10 файлов, до 25Мб суммарно</span>
+                                </div>
+
+                                <div class="form__policy">
+                                    <label class="form__check checkbox">
+                                        <input class="checkbox__input visually-hidden" type="checkbox" name="check" checked>
+
+                                        <div class="checkbox__text">
+                                            <span class="checkbox__text-in">
+                                                Я соглашаюсь на обработку персональных данных в
+                                                соответствии с <a href="">политикой конфиденциальности</a>.
+                                            </span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__bottom">
+                                <div class="form__captha-wrapper">
+                                    <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+                                </div>
+
+                                <button class="form__btn btn">отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts-popap popap js-active active">
+            <div class="contacts-popap__inner popap__inner">
+                <div class="contacts-popap__container container">
+                    <button class="popap__close burger-btn active" type="button" aria-label="закрыть всплывающее окно">
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                        <span class="burger-btn__line"></span>
+                    </button>
+
+                    <address class="contacts-popap__address">
+                        <a class="footer__logo logo" href="">
+                            <img class="logo__img" src="./img/logo-footer.svg" height="46" width="519" alt="логотип тулмашсервис">
+                        </a>
+
+                        <ul class="contacts-popap__list">
+                            <li class="contacts-popap__item">
+                                300002, г. Тула, ул. Литейная, д. 22а
+                            </li>
+                            <li class="contacts-popap__item">
+                                <b>ООО "ТУЛМАШСЕРВИС"</b> (ООО "ТМС")
+
+                                <span class="contacts-popap__br">
+                                    ИНН 7107070814
+                                </span>
+                                <span class="contacts-popap__br">
+                                    ОГРН 1037101125434
+                                </span>
+                            </li>
+                            <li class="contacts-popap__item">
+                                <a class="contacts-popap__link" href="mailto:zakaz@TMC.ooo">
+                                    zakaz@TMC.ooo
+                                </a>
+                                Приём заявок и консультации
+                            </li>
+                            <li class="contacts-popap__item">
+                                <a class="contacts-popap__link" href="mailto:info@TMC.ooo">
+                                    info@TMC.ooo
+                                </a>
+                                Общие вопросы
+                            </li>
+                        </ul>
+
+                        <div class="contacts-popap__bottom">
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a class="social__link" href="" target="_blank" aria-label="в контакте">
+                                        <svg width="44" height="44">
+                                            <use xlink:href="img/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="" target="_blank" aria-label="ютуб">
+                                        <svg width="44" height="44">
+                                            <use xlink:href="img/sprite.svg#yt"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a class="contacts-popap__tel" href="tel:+79202761182">
+                                +7 (920) 276-11-82
+                            </a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./js/jquery.min.js"></script>

@@ -1,0 +1,30 @@
+.glad {
+  text-align: center;
+  &__container {
+  }
+
+  &__h2 {
+    margin-bottom: 10px;
+
+    & > * {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #00b7b7;
+    }
+  }
+
+  &__text {
+    max-width: 670px;
+
+    margin: 0 auto 27px;
+    color: #303030;
+  }
+
+  &__btn {
+  }
+}
+.container {
+}
+.btn {
+}

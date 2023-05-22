@@ -18,6 +18,10 @@
     font-size: 12px;
     line-height: 15px;
     max-width: 710px;
+
+    @include max-w($tablets) {
+      padding-left: 0;
+    }
   }
 
   &--right-text &__text {

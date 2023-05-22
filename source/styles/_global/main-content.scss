@@ -1,10 +1,15 @@
 .main-content {
-    &__block {
-        padding-top: 55px;
-    }
+  &__block {
+    padding-top: 55px;
+  }
 
-    &__block--clear {
-        padding: 0;
+  &__block--clear {
+    padding: 0;
+  }
+
+  &__container {
+    @include max-w($tablets) {
+      padding: 0;
     }
+  }
 }
-

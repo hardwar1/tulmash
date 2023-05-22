@@ -40,6 +40,10 @@
   }
 
   &__input {
+    width: calc(50% - 15px);
+    @include max-w($tablets) {
+      width: 100%;
+    }
   }
 
   &__textarea {
@@ -55,15 +59,21 @@
     align-items: center;
 
     @include max-w($tablets) {
-      align-items: flex-start;
+      align-items: center;
+      width: 100%;
     }
   }
 
   &__form-file {
     margin-bottom: 10px;
+
+    @include max-w($tablets) {
+      width: 100%;
+    }
   }
 
   &__file {
+
   }
 
   &__file-btn {
@@ -76,6 +86,11 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 5px;
+
+    @include max-w($tablets) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__file-text {
@@ -83,10 +98,6 @@
     text-align: center;
     font-size: 14px;
     line-height: 17px;
-
-    @include max-w($tablets) {
-      display: inline;
-    }
   }
 
   &__file-desc {

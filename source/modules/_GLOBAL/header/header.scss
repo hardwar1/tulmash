@@ -74,6 +74,9 @@
 
     @include max-w($desktops-sm) {
       margin-right: 0;
+      text-align: center;
+      display: block;
+      width: 100%;
     }
 
     @include max-w($tablets) {

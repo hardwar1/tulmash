@@ -3,7 +3,7 @@
   }
 
   &__inner {
-    max-width: 870px;
+    max-width: 875px;
   }
 
   &__h2 {
@@ -94,5 +94,10 @@
 
   &__btn {
     margin-top: auto;
+  }
+
+  &--border &__inner {
+    padding-bottom: 51px;
+    border-bottom: 1px solid #000;
   }
 }

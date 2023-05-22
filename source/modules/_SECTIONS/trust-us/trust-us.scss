@@ -1,0 +1,78 @@
+.trust-us {
+  background-image: url(../img/trust-us-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 45px 0;
+  position: relative;
+
+  &__right-color {
+    right: unset;
+    left: 0;
+  }
+
+  &__container {
+  }
+
+  &__inner {
+    max-width: 670px;
+  }
+
+  &__h2 {
+    margin-bottom: 25px;
+  }
+
+  &__h2 > *,
+  &__h3 > * {
+    color: inherit;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    margin-left: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__h3 {
+    max-width: 513px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    & > * {
+      font: inherit;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 6px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
