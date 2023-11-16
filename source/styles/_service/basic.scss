@@ -187,6 +187,14 @@ h3,
   text-transform: uppercase;
   letter-spacing: 0.01em;
   background-color: transparent;
+  outline: 0;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: #6dd4cd;
+    background-color: #fff;
+  }
 
   &--white {
     border-color: #fff;
@@ -243,6 +251,26 @@ h3,
     svg {
       transform: rotate(180deg);
     }
+  }
+}
+
+.button {
+  padding: 11px 30px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #00b7b7;
+  transition: background-color 0.3s, color 0.3s;
+  outline: 0;
+
+  &:focus,
+  &:hover {
+    background-color: #00b7b7;
+    color: #fff;
   }
 }
 
@@ -318,6 +346,8 @@ h3,
       background-size: contain;
       width: 45px;
       height: 45px;
+      cursor: pointer;
+      transition: transform 0.3s;
     }
 
     &::before {
@@ -332,8 +362,17 @@ h3,
       background-size: contain;
       z-index: 2;
       opacity: 0;
-      transition: opacity 0.3s;
+      transition: opacity 0.4s;
+      cursor: pointer;
     }
+
+    &:hover::after {
+      transform: rotate(30deg);
+    }
+  }
+
+  input:focus + &__text::after {
+    transform: rotate(90deg);
   }
 
   &__input:checked + &__text::before {
@@ -358,7 +397,13 @@ h3,
   &__item {
   }
 
-  &__link {
+  svg {
+    fill: #53c2bb;
+    transition: fill 0.3s;
+  }
+
+  &__link:hover svg {
+    fill: #25a9b7;
   }
 }
 
@@ -480,8 +525,38 @@ main {
   .form {
     padding-top: 20px !important;
   }
-}
 
+  &--line &__inner {
+    padding: 40px 34px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 34px;
+      background-color: #00b7b7;
+    }
+
+    @include max-w($tablets) {
+      padding-left: 0;
+      padding-right: 0;
+      &::after {
+        content: unset;
+      }
+    }
+  }
+
+  &--line &__close {
+    right: 34px;
+
+    @include max-w($tablets) {
+      right: 0;
+    }
+  }
+}
 
 .delivery {
   max-width: 1064px;
@@ -500,5 +575,90 @@ main {
 
   &__form .form__btn {
     margin-right: auto;
+  }
+}
+
+.contacts-popap {
+  font-family: $ff-com;
+  font-size: 20px;
+  line-height: 25px;
+  color: #212529;
+
+  &__logo {
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    padding-left: 203px;
+    margin-bottom: 30px;
+    @include max-w($tablets) {
+      padding-left: 0;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__br {
+    display: block;
+  }
+
+  &__link {
+    b {
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 70px;
+  }
+
+  &__tel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4cb7b2;
+  }
+}
+
+.line-hover {
+  display: inline-block;
+  position: relative;
+  outline: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: color 0.2s, width 0.5s;
+  }
+
+  &:focus:after,
+  &:hover:after {
+    content: "";
+    right: unset;
+    left: 0;
+    width: 100%;
+    background-color: #4cb7b2;
+  }
+}
+
+.color-hover {
+  transition: color 0.3s;
+  outline: 0;
+
+  &:focus,
+  &:hover {
+    color: #00b7b7;
   }
 }

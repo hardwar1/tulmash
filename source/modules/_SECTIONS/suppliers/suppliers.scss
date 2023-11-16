@@ -50,6 +50,11 @@
   &__item {
     width: fit-content;
     max-width: 100%;
+    @include max-w($phones-md) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__img {

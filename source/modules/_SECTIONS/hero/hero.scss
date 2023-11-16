@@ -145,6 +145,10 @@
     background-color: transparent;
     transition: background-color 0.3s;
     margin: 0 !important;
+
+    &:hover {
+      background-color: #4cb7b2;
+    }
   }
 
   .swiper-pagination-bullet-active {

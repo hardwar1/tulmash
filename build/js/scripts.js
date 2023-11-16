@@ -58,6 +58,11 @@ window.addEventListener("DOMContentLoaded", () => {
     openPopaps('.delivery');
   });
 
+  $('.contacts-btn').click(function (e) {
+    e.preventDefault();
+    openPopaps('.contacts-popap');
+  });
+
   $('.popap__close').click(closePopaps);
 
   $('.overlay').click(closePopaps);

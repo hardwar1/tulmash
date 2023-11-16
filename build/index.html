@@ -40,8 +40,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
 
-
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/libs.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -59,7 +59,7 @@
 
                         <ul class="header__list">
                             <li class="header__list-item">
-                                <a class="header__link hover-menu" href="">услуги...</a>
+                                <a class="header__link hover-menu line-hover" href="">услуги...</a>
 
                                 <ul class="header__submenu">
                                     <li class="header__submenu-item">
@@ -81,14 +81,14 @@
                             </li>
 
                             <li class="header__list-item">
-                                <a class="header__link delivery-btn" href="">отправить заявку</a>
+                                <a class="header__link delivery-btn line-hover" href="">отправить заявку</a>
                             </li>
 
                             <li class="header__list-item">
-                                <a class="header__link" href="">о компании</a>
+                                <a class="header__link line-hover" href="">о компании</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__link" href="">контакты</a>
+                                <a class="header__link contacts-btn line-hover" href="">контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -586,7 +586,7 @@
 
                     <ul class="address__contacts contacts">
                         <li class="contacts__item">
-                            <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                            <a class="contacts__link color-hover" href="tel:+79202761182" target="_blank">
                                 <svg width="44" height="44">
                                     <use xlink:href="img/sprite.svg#contacts-tel"></use>
                                 </svg>
@@ -595,7 +595,7 @@
                         </li>
 
                         <li class="contacts__item">
-                            <a class="contacts__link" href="" target="_blank">
+                            <a class="contacts__link color-hover" href="" target="_blank">
                                 <svg width="44" height="44">
                                     <use xlink:href="img/sprite.svg#contacts-wa"></use>
                                 </svg>
@@ -604,7 +604,7 @@
                         </li>
 
                         <li class="contacts__item">
-                            <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                            <a class="contacts__link color-hover" href="" target="_blank">
                                 <svg width="44" height="44">
                                     <use xlink:href="img/sprite.svg#contacts-tg"></use>
                                 </svg>
@@ -643,7 +643,7 @@
                             <div class="form__row form__row--mb25">
                                 <div class="form__attach-file">
                                     <label class="form__form-file">
-                                        <input type="file" class="visually-hidden" multiple name="files[]">
+                                        <input type="file" class="form__file visually-hidden" multiple name="files[]">
                                         <span class="form__file-btn">Приложить файлы </span>
                                         <span class="form__file-text file-text">Файл не выбран </span>
                                     </label>
@@ -665,10 +665,6 @@
                             </div>
 
                             <div class="form__bottom">
-                                <div class="form__captha-wrapper">
-                                    <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
-                                </div>
-
                                 <button class="form__btn btn">отправить</button>
                             </div>
                         </div>
@@ -702,12 +698,12 @@
                             </li>
                         </ul>
 
-                        <a href="" class="footer__bottom-link">
-                            E-mail: zakaz@TMC.ooo (Приём заявок и консультации)
-                            info@TMC.ooo (Общие вопросы)
-                        </a>
+                        <div href="" class="footer__bottom-link ">
+                            <a class="color-hover" href="mailto:zakaz@TMC.ooo">E-mail: zakaz@TMC.ooo (Приём заявок и консультации)</a>
+                            <a class="color-hover" href="mailto:info@TMC.ooo">info@TMC.ooo (Общие вопросы)</a>
+                        </div>
 
-                        <a href="tel:+79202761182" class="footer__bottom-tel">
+                        <a href="tel:+79202761182" class="footer__bottom-tel line-hover">
                             +7 (920) 276-11-82
                         </a>
 
@@ -732,47 +728,47 @@
                     <nav class="footer__menu">
                         <ul class="footer__menu-list">
                             <li class="footer__menu-item ">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Главная страница
                                 </a>
                             </li>
                             <li class="footer__menu-item ">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Комплексное снабжение
                                 </a>
                             </li>
                             <li class="footer__menu-item ">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Аутсорсинг снабжения
                                 </a>
                             </li>
                             <li class="footer__menu-item ">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Комплектация малоценкой
                                 </a>
                             </li>
                             <li class="footer__menu-item ">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     О компании
                                 </a>
                             </li>
                             <li class="footer__menu-item mb30">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Контакты
                                 </a>
                             </li>
                             <li class="footer__menu-item footer__menu-item--ff-com">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Вход для клиентов
                                 </a>
                             </li>
                             <li class="footer__menu-item footer__menu-item--ff-com">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Вакансии
                                 </a>
                             </li>
                             <li class="footer__menu-item footer__menu-item--ff-com">
-                                <a class="footer__menu-link" href="">
+                                <a class="footer__menu-link color-hover" href="">
                                     Политика конфиденциальности
                                 </a>
                             </li>
@@ -783,7 +779,7 @@
             </div>
         </footer>
 
-        <div class="overlay js-active active"></div>
+        <div class="overlay js-active"></div>
 
         <div class="recommend popap js-active">
             <div class="recommend__inner popap__inner">
@@ -797,7 +793,6 @@
                         <span class="burger-btn__line"></span>
                     </button>
 
-
                     <address class="recommend__address address ">
                         <p class="address__top-text">
                             Заполните форму или выберите удобный способ связи:
@@ -805,7 +800,7 @@
 
                         <ul class="address__contacts contacts">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                <a class="contacts__link color-hover" href="tel:+79202761182" target="_blank">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#contacts-tel"></use>
                                     </svg>
@@ -814,7 +809,7 @@
                             </li>
 
                             <li class="contacts__item">
-                                <a class="contacts__link" href="" target="_blank">
+                                <a class="contacts__link color-hover" href="" target="_blank">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#contacts-wa"></use>
                                     </svg>
@@ -823,7 +818,7 @@
                             </li>
 
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                <a class="contacts__link color-hover" href="" target="_blank">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#contacts-tg"></use>
                                     </svg>
@@ -871,14 +866,9 @@
                                     </label>
                                 </div>
 
-                                <div class="form__captha-wrapper">
-                                    <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
-                                </div>
                             </div>
 
                             <div class="form__bottom">
-
-
                                 <button class="form__btn btn">отправить</button>
                             </div>
                         </div>
@@ -906,7 +896,7 @@
 
                         <ul class="address__contacts contacts">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                <a class="contacts__link color-hover" href="tel:+79202761182" target="_blank">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#contacts-tel"></use>
                                     </svg>
@@ -915,7 +905,7 @@
                             </li>
 
                             <li class="contacts__item">
-                                <a class="contacts__link" href="" target="_blank">
+                                <a class="contacts__link color-hover" href="" target="_blank">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#contacts-wa"></use>
                                     </svg>
@@ -924,7 +914,7 @@
                             </li>
 
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+79202761182" target="_blank">
+                                <a class="contacts__link color-hover" href="" target="_blank">
                                     <svg width="44" height="44">
                                         <use xlink:href="img/sprite.svg#contacts-tg"></use>
                                     </svg>
@@ -960,7 +950,7 @@
                             <div class="form__row form__row--mb25">
                                 <div class="form__attach-file">
                                     <label class="form__form-file">
-                                        <input type="file" class="visually-hidden" multiple name="files[]">
+                                        <input type="file" class="form__file visually-hidden" multiple name="files[]">
                                         <span class="form__file-btn">Приложить файлы </span>
                                         <span class="form__file-text file-text">Файл не выбран </span>
                                     </label>
@@ -982,10 +972,6 @@
                             </div>
 
                             <div class="form__bottom">
-                                <div class="form__captha-wrapper">
-                                    <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
-                                </div>
-
                                 <button class="form__btn btn">отправить</button>
                             </div>
                         </div>
@@ -994,7 +980,7 @@
             </div>
         </div>
 
-        <div class="contacts-popap popap js-active active">
+        <div class="contacts-popap popap popap--line js-active">
             <div class="contacts-popap__inner popap__inner">
                 <div class="contacts-popap__container container">
                     <button class="popap__close burger-btn active" type="button" aria-label="закрыть всплывающее окно">
@@ -1007,7 +993,7 @@
                     </button>
 
                     <address class="contacts-popap__address">
-                        <a class="footer__logo logo" href="">
+                        <a class="contacts-popap__logo logo" href="">
                             <img class="logo__img" src="./img/logo-footer.svg" height="46" width="519" alt="логотип тулмашсервис">
                         </a>
 
@@ -1026,16 +1012,16 @@
                                 </span>
                             </li>
                             <li class="contacts-popap__item">
-                                <a class="contacts-popap__link" href="mailto:zakaz@TMC.ooo">
-                                    zakaz@TMC.ooo
+                                <a class="contacts-popap__link color-hover" href="mailto:zakaz@TMC.ooo">
+                                    <b> zakaz@TMC.ooo</b>
+                                    Приём заявок и консультации
                                 </a>
-                                Приём заявок и консультации
                             </li>
                             <li class="contacts-popap__item">
-                                <a class="contacts-popap__link" href="mailto:info@TMC.ooo">
-                                    info@TMC.ooo
+                                <a class="contacts-popap__link color-hover" href="mailto:info@TMC.ooo">
+                                    <b> info@TMC.ooo</b>
+                                    Общие вопросы
                                 </a>
-                                Общие вопросы
                             </li>
                         </ul>
 
@@ -1057,7 +1043,7 @@
                                 </li>
                             </ul>
 
-                            <a class="contacts-popap__tel" href="tel:+79202761182">
+                            <a class="contacts-popap__tel " href="tel:+79202761182">
                                 +7 (920) 276-11-82
                             </a>
                         </div>

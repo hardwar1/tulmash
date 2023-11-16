@@ -72,10 +72,6 @@
     }
   }
 
-  &__file {
-
-  }
-
   &__file-btn {
     display: inline-block;
     padding: 6px 11px;
@@ -86,11 +82,23 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+
+    &:hover {
+      border-color: #00b7b7;
+      color: #00b7b7;
+    }
 
     @include max-w($tablets) {
       width: 100%;
       display: block;
     }
+  }
+
+  &__file:focus + &__file-btn {
+    border-color: #00b7b7;
+    color: #00b7b7;
   }
 
   &__file-text {
@@ -144,20 +152,6 @@
     width: fit-content;
     margin-left: auto;
     border-width: 4px;
-
-    @include max-w($tablets) {
-      margin-right: auto;
-    }
-  }
-
-  &__captha-wrapper {
-    min-width: 290px;
-    min-height: 50px;
-    background-color: #ccc;
-    order: 2;
-
-    @include max-w($tablets) {
-      order: unset;
-    }
+    margin-right: auto;
   }
 }

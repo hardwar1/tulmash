@@ -71,6 +71,12 @@
     font-size: 32px;
     line-height: 39px;
     color: #4cb7b2;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus {
+      color: #169892;
+    }
 
     @include max-w($desktops-sm) {
       margin-right: 0;
@@ -80,7 +86,7 @@
     }
 
     @include max-w($tablets) {
-    font-size: 25px;
+      font-size: 25px;
     }
   }
 
